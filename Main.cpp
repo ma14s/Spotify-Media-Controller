@@ -69,34 +69,6 @@ static bool ChangeMediaState(const std::wstring_view SourceAppUserModelId, const
 }
 
 
-void GetMediaInfo() 
-{
-    auto sessionManager = GlobalSystemMediaTransportControlsSessionManager::RequestAsync().get();
-
-    if (!sessionManager)
-    {
-        return;
-    }
-
-    const auto Sessions =  sessionManager.GetSessions();
-
-    hstring SourceAppName;
-
-    for (const auto& session : Sessions) 
-    {
-        SourceAppName = session.SourceAppUserModelId();
-
-        if (SourceAppName == L"SpotifyAB.SpotifyMusic_zpdnekdrzrea0!Spotify")
-        {
-
-        }
-
-    }
-
-
-
-}
-
 int main() 
 {
     try
