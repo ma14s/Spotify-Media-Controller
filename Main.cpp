@@ -25,7 +25,7 @@ static bool ChangeMediaState(const std::wstring_view SourceAppUserModelId, const
 
     if (!sessionManager)
     {
-        OutputDebugStringA("Falied To Get sessionManager");
+        OutputDebugStringA("Failed To Get sessionManager");
         return false;
     }
 
@@ -44,7 +44,7 @@ static bool ChangeMediaState(const std::wstring_view SourceAppUserModelId, const
 
     if (!TargtedSession)
     {
-        OutputDebugStringA("Falied To Get TargtedSession");
+        OutputDebugStringA("Failed To Get TargtedSession");
         return false;
     }
 
